@@ -1,70 +1,170 @@
-# Getting Started with Create React App
+# Divakar Yadav - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Showcasing expertise in CUDA engineering, GPU computing, and full-stack development.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Modern Design**: Clean, professional design with smooth animations
+- **Responsive**: Fully responsive across all devices
+- **Dark Mode**: Toggle between light and dark themes
+- **Smooth Scrolling**: Seamless navigation between sections
+- **Interactive Elements**: Hover effects and micro-interactions
+- **Performance Optimized**: Built with modern React practices
+- **SEO Friendly**: Proper meta tags and semantic HTML
 
-### `npm start`
+## 🛠️ Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS, Framer Motion
+- **Icons**: Lucide React
+- **Navigation**: React Scroll
+- **Build Tool**: Create React App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Sections
 
-### `npm test`
+1. **Hero**: Introduction with call-to-action buttons
+2. **About**: Personal background, education, and achievements
+3. **Experience**: Detailed work history with achievements
+4. **Projects**: Showcase of research and development projects
+5. **Skills**: Technical skills with proficiency levels
+6. **Contact**: Contact form and information
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Key Highlights
 
-### `npm run build`
+- **CUDA Engineering**: Specialized in GPU computing and optimization
+- **Research Projects**: DECODE drug-protein binding prediction tool
+- **Performance Optimization**: 35% improvement in GPU operations
+- **Full-Stack Development**: 4+ years of experience
+- **Hackathon Winner**: 2nd place at QBI 2025 Hackathon
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v16 or higher)
+- npm or yarn
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
+```bash
+git clone https://github.com/divakar-yadav/portfolio.git
+cd portfolio
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies:
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the development server:
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Learn More
+### Building for Production
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Project Structure
 
-### Code Splitting
+```
+src/
+├── components/
+│   ├── About.tsx
+│   ├── Contact.tsx
+│   ├── Experience.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── Projects.tsx
+│   └── Skills.tsx
+├── App.tsx
+├── index.tsx
+└── index.css
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Customization
 
-### Analyzing the Bundle Size
+### Colors
+The color scheme can be customized in `tailwind.config.js`:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```javascript
+colors: {
+  primary: {
+    50: '#eff6ff',
+    // ... other shades
+  },
+  dark: {
+    50: '#f8fafc',
+    // ... other shades
+  }
+}
+```
 
-### Making a Progressive Web App
+### Content
+Update the content in each component file to match your information:
+- Personal details in `Hero.tsx`
+- Work experience in `Experience.tsx`
+- Projects in `Projects.tsx`
+- Skills in `Skills.tsx`
+- Contact information in `Contact.tsx`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📱 Responsive Design
 
-### Advanced Configuration
+The website is fully responsive with breakpoints:
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🌙 Dark Mode
 
-### Deployment
+Dark mode is implemented with:
+- CSS custom properties
+- Tailwind dark mode classes
+- Smooth transitions between themes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📈 Performance
 
-### `npm run build` fails to minify
+- Lazy loading of components
+- Optimized images and assets
+- Minimal bundle size
+- Fast loading times
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔧 Development
+
+### Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App
+
+### Code Style
+
+- TypeScript for type safety
+- ESLint for code quality
+- Prettier for code formatting
+- Component-based architecture
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📞 Contact
+
+- **Email**: dkyadav@uwm.edu
+- **LinkedIn**: [linkedin.com/in/divakar-yadv](https://linkedin.com/in/divakar-yadv)
+- **GitHub**: [github.com/divakar-yadav](https://github.com/divakar-yadav)
+
+---
+
+Built with ❤️ using React, TypeScript, and Tailwind CSS
