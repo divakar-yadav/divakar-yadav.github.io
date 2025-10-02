@@ -77,26 +77,13 @@ const Projects: React.FC = () => {
       image: "/api/placeholder/400/250",
       icon: <Cpu className="w-8 h-8" />,
       achievements: ["43% latency reduction", "1% accuracy preservation", "Kernel fusion optimization"]
-    },
-    {
-      title: "Loan Distribution Platform",
-      description: "Developed a comprehensive loan distribution platform from scratch with Redis-based caching and Dead Letter Queue.",
-      longDescription: "Implemented a Dead Letter queue-based Retry mechanism to reduce the failure rate of Bulk API Calls by 30%. Implemented Redis-based cache mechanism in all backend services to reduce response time to an average of 150ms.",
-      category: "web",
-      technologies: ["Python", "Django", "Redis", "AWS", "Microservices", "React", "TypeScript"],
-      github: "https://github.com/divakar-yadav/loan-platform",
-      demo: "#",
-      image: "/api/placeholder/400/250",
-      icon: <Rocket className="w-8 h-8" />,
-      achievements: ["30% failure rate reduction", "150ms average response time", "End-to-end platform"]
     }
   ];
 
   const categories = [
     { id: 'all', name: 'All Projects' },
     { id: 'research', name: 'Research' },
-    { id: 'gpu', name: 'GPU Computing' },
-    { id: 'web', name: 'Web Development' }
+    { id: 'gpu', name: 'GPU Computing' }
   ];
 
   const filteredProjects = activeCategory === 'all' 

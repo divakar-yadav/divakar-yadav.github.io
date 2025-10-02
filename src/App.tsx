@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, Element } from 'react-scroll';
-import { Sun, Moon, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Hero from './components/Hero';
 import About from './components/About';
+import Publications from './components/Publications';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -11,20 +12,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -33,6 +22,7 @@ function App() {
   const navItems = [
     { name: 'Home', to: 'home' },
     { name: 'About', to: 'about' },
+    { name: 'Publications', to: 'publications' },
     { name: 'Experience', to: 'experience' },
     { name: 'Projects', to: 'projects' },
     { name: 'Skills', to: 'skills' },
@@ -44,16 +34,7 @@ function App() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-dark-900/80 backdrop-blur-md border-b border-gray-200 dark:border-dark-700">
         <div className="container-custom px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="text-2xl font-bold gradient-text"
-            >
-              Divakar Yadav
-            </motion.div>
-
+          <div className="flex justify-center items-center h-16">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
@@ -69,24 +50,10 @@ function App() {
                   {item.name}
                 </Link>
               ))}
-              
-              {/* Dark Mode Toggle */}
-              <button
-                onClick={toggleDarkMode}
-                className="p-2 rounded-lg bg-gray-100 dark:bg-dark-800 hover:bg-gray-200 dark:hover:bg-dark-700 transition-colors duration-200"
-              >
-                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-              </button>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center space-x-4">
-              <button
-                onClick={toggleDarkMode}
-                className="p-2 rounded-lg bg-gray-100 dark:bg-dark-800 hover:bg-gray-200 dark:hover:bg-dark-700 transition-colors duration-200"
-              >
-                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-              </button>
               <button
                 onClick={toggleMobileMenu}
                 className="p-2 rounded-lg bg-gray-100 dark:bg-dark-800 hover:bg-gray-200 dark:hover:bg-dark-700 transition-colors duration-200"
@@ -135,6 +102,10 @@ function App() {
         
         <Element name="about">
           <About />
+        </Element>
+        
+        <Element name="publications">
+          <Publications />
         </Element>
         
         <Element name="experience">

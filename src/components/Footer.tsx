@@ -35,13 +35,9 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
             className="mb-8"
           >
-            <h3 className="text-2xl font-bold gradient-text mb-4">
+            <h3 className="text-2xl font-bold gradient-text mb-8">
               Divakar Yadav
             </h3>
-            <p className="text-gray-400 max-w-md mx-auto">
-              Software Engineer specializing in inference optimization, large-scale distributed inference, 
-              CUDA optimization, and vLLM deployment for production-scale ML systems.
-            </p>
           </motion.div>
 
           {/* Social Links */}

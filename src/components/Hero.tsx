@@ -53,24 +53,14 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Greeting */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-4"
-          >
-            <span className="text-primary-600 dark:text-primary-400 font-medium">Hello, I'm</span>
-          </motion.div>
-
           {/* Name */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-3xl md:text-4xl font-bold mb-6 text-primary-600 dark:text-primary-400"
           >
-            <span className="gradient-text">Divakar Yadav</span>
+            Divakar Yadav
           </motion.h1>
 
           {/* Title */}
@@ -78,21 +68,44 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6"
+            className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300 mb-6"
           >
             Software Engineer - Inference Optimization
           </motion.h2>
+
+          {/* Research Areas */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+            className="mb-8"
+          >
+            <div className="flex flex-wrap justify-center gap-3">
+              <span className="px-4 py-2 bg-primary-100 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">
+                CUDA Optimization
+              </span>
+              <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">
+                ML Systems
+              </span>
+              <span className="px-4 py-2 bg-pink-100 dark:bg-pink-900/20 text-pink-700 dark:text-pink-300 rounded-full text-sm font-medium">
+                GPU Computing
+              </span>
+              <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+                Distributed Inference
+              </span>
+            </div>
+          </motion.div>
 
           {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Specialized in CUDA optimization, vLLM deployment, and large-scale distributed inference systems. 
-            Passionate about building high-performance GPU-accelerated applications and optimizing deep learning 
-            pipelines for production-scale deployment.
+            I am a Software Engineer specializing in <strong>GPU Computing and ML Systems</strong>. Currently pursuing my Master's at 
+            <strong> University of Wisconsin-Milwaukee</strong> and working as a CUDA Engineer optimizing inference systems for 
+            large-scale distributed ML workloads.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -113,7 +126,7 @@ const Hero: React.FC = () => {
               View My Work
             </Link>
             <a
-              href="/resume.pdf"
+              href="/resume/DivakarYadav.pdf"
               download
               className="btn-secondary flex items-center gap-2"
             >

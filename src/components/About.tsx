@@ -76,20 +76,20 @@ const About: React.FC = () => {
             </h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-400">
               <p className="leading-relaxed">
-                I'm a Software Engineer specializing in inference optimization and large-scale distributed inference 
-                systems, currently pursuing my Master's in Computer Science at the University of Wisconsin, Milwaukee. 
-                With over 4 years of experience in software development, I focus on CUDA optimization, vLLM deployment, 
-                and building high-performance GPU-accelerated applications.
+                I am a Software Engineer specializing in <strong>GPU Computing and ML Systems</strong>. Currently pursuing my Master's in Computer Science at 
+                <strong> University of Wisconsin-Milwaukee</strong> and working as a CUDA Engineer optimizing inference systems for large-scale distributed ML workloads.
               </p>
               <p className="leading-relaxed">
-                My current focus is on H100/A100 GPU tuning, multi-GPU scheduling, and memory-efficient model 
-                deployment for large-scale distributed inference. I've worked extensively with PyTorch, TensorRT, 
-                vLLM, and custom CUDA kernels to achieve significant performance improvements in production ML workloads.
+                My research focuses on <strong>Distributed Machine Learning Systems</strong>, spanning Efficient Machine Learning, System Optimization, and Hardware Acceleration. 
+                I am one of the pioneers who studied GPU optimization techniques for transformer-based models, achieving significant performance improvements in production ML workloads.
               </p>
               <p className="leading-relaxed">
-                Beyond GPU computing, I have strong experience in full-stack development, having built 
-                comprehensive platforms from scratch, implemented microservices architectures, and optimized 
-                systems for high throughput and low latency in distributed environments.
+                Recently, I have been working on <strong>massive model inference systems</strong> and <strong>GPU-accelerated deep learning pipelines</strong>. 
+                I've published research on GPT-OSS-20B deployment analysis, achieving 31.8% higher decode throughput and 25.8% lower energy consumption on H100 GPUs.
+              </p>
+              <p className="leading-relaxed">
+                Beyond GPU computing, I have strong experience in full-stack development, having built comprehensive platforms from scratch, 
+                implemented microservices architectures, and optimized systems for high throughput and low latency in distributed environments.
               </p>
             </div>
 

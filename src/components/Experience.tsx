@@ -152,7 +152,7 @@ const Experience: React.FC = () => {
                   {/* Achievements */}
                   <div className="mb-6">
                     <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">
-                      Key Achievements:
+                      Contributions:
                     </h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, idx) => (

@@ -29,18 +29,6 @@ const Skills: React.FC = () => {
       ]
     },
     {
-      title: "Frontend Development",
-      icon: <Zap className="w-6 h-6" />,
-      skills: [
-        { name: "React", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "Redux", level: 82 },
-        { name: "React Native", level: 78 },
-        { name: "HTML/CSS", level: 88 },
-        { name: "Tailwind CSS", level: 85 }
-      ]
-    },
-    {
       title: "Databases & Caching",
       icon: <Database className="w-6 h-6" />,
       skills: [
@@ -79,10 +67,10 @@ const Skills: React.FC = () => {
   ];
 
   const additionalSkills = [
-    "Test Driven Development", "Distributed Systems", "System Design", 
-    "Performance Optimization", "Memory Management", "Parallel Computing",
-    "Git", "Linux", "Shell Scripting", "Agile/Scrum", "Technical Leadership",
-    "Code Review", "Documentation", "Problem Solving", "Algorithm Design"
+    "vLLM", "TensorRT", "Nsight Systems", "Nsight Compute", "cuBLAS", "NCCL", 
+    "Mixed Precision", "Kernel Fusion", "Warp Primitives", "Memory Coalescing",
+    "GPU Profiling", "CUDA Graphs", "Multi-GPU Inference", "Transformer Optimization",
+    "Mixture-of-Experts", "Model Quantization", "Inference Acceleration"
   ];
 
   return (
