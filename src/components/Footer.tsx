@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
           </motion.div>
 
           {/* Divider */}
-          <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent mb-8"></div>
+          <div className="w-full h-px bg-gray-700 mb-8"></div>
 
           {/* Copyright */}
           <motion.div

@@ -196,9 +196,9 @@ const Experience: React.FC = () => {
         >
           <div className="inline-flex items-center gap-4 text-gray-600 dark:text-gray-400">
             <div className="w-4 h-4 bg-primary-500 rounded-full"></div>
-            <div className="w-32 h-1 bg-gradient-to-r from-primary-500 to-purple-500 rounded-full"></div>
-            <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
-            <div className="w-32 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+            <div className="w-32 h-1 bg-primary-500 rounded-full"></div>
+            <div className="w-4 h-4 bg-primary-400 rounded-full"></div>
+            <div className="w-32 h-1 bg-primary-500 rounded-full"></div>
             <div className="w-4 h-4 bg-pink-500 rounded-full"></div>
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">

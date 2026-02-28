@@ -12,13 +12,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-dark-900 dark:via-dark-800 dark:to-dark-900">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-primary-400 rounded-full mix-blend-multiply filter blur-xl animate-float"></div>
-        <div className="absolute top-40 right-20 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '4s' }}></div>
-      </div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:bg-dark-900">
 
       <div className="container-custom section-padding relative z-10">
         <div className="text-center max-w-4xl mx-auto">
@@ -46,7 +40,7 @@ const Hero: React.FC = () => {
                     }
                   }}
                 />
-                <div className="w-full h-full bg-gradient-to-br from-primary-400 to-purple-500 flex items-center justify-center text-white text-2xl font-bold" style={{ display: 'none' }}>
+                <div className="w-full h-full bg-primary-600 flex items-center justify-center text-white text-2xl font-bold" style={{ display: 'none' }}>
                   DY
                 </div>
               </div>
@@ -81,16 +75,16 @@ const Hero: React.FC = () => {
             className="mb-8"
           >
             <div className="flex flex-wrap justify-center gap-3">
-              <span className="px-4 py-2 bg-primary-100 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">
+              <span className="px-4 py-2 bg-gray-100 dark:bg-dark-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">
                 CUDA Optimization
               </span>
-              <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">
+              <span className="px-4 py-2 bg-gray-100 dark:bg-dark-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">
                 ML Systems
               </span>
-              <span className="px-4 py-2 bg-pink-100 dark:bg-pink-900/20 text-pink-700 dark:text-pink-300 rounded-full text-sm font-medium">
+              <span className="px-4 py-2 bg-gray-100 dark:bg-dark-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">
                 GPU Computing
               </span>
-              <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+              <span className="px-4 py-2 bg-gray-100 dark:bg-dark-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">
                 Distributed Inference
               </span>
             </div>

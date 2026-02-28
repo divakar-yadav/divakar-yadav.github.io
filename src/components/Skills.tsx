@@ -128,7 +128,7 @@ const Skills: React.FC = () => {
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1, delay: skillIndex * 0.1 }}
                         viewport={{ once: true }}
-                        className="bg-gradient-to-r from-primary-500 to-purple-500 h-2 rounded-full"
+                        className="bg-primary-500 h-2 rounded-full"
                       />
                     </div>
                   </div>

@@ -143,7 +143,7 @@ const Projects: React.FC = () => {
               className="card overflow-hidden group hover:shadow-xl transition-all duration-300"
             >
               {/* Project Image */}
-              <div className="relative h-48 bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/20 dark:to-purple-900/20 flex items-center justify-center">
+              <div className="relative h-48 bg-gray-100 dark:bg-dark-800 flex items-center justify-center">
                 <div className="text-primary-600 dark:text-primary-400 group-hover:scale-110 transition-transform duration-300">
                   {project.icon}
                 </div>
